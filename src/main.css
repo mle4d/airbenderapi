@@ -1,0 +1,29 @@
+body {
+    background: lightseagreen;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: courier;
+}
+
+header, main {
+    padding: 8px;
+}
+
+main {
+    position: relative;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: lightpink;
+    border-bottom: 1px solid lightslategray;
+}
+
+h1 {
+    margin: 0 20px;
+    flex-grow: 2;
+}
