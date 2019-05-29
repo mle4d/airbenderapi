@@ -15,7 +15,7 @@ class App extends Component {
         const main = dom.querySelector('main');
         dom.insertBefore(headerDOM, main);
 
-        const airList = new AirList({ queens: [] });
+        const airList = new AirList({ Airs: [] });
         main.appendChild(airList.render());
 
         const loading = new Loading({ loading: true });
