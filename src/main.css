@@ -21,9 +21,16 @@ header {
     justify-content: space-between;
     background: lightpink;
     border-bottom: 1px solid lightslategray;
+    color: lightseagreen;
+    font-size: 30px;
+    text-align: center;
 }
 
 h1 {
     margin: 0 20px;
     flex-grow: 2;
+}
+img {
+    width: 250px;
+    height: 200px;
 }
