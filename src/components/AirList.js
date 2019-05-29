@@ -4,7 +4,6 @@ import AirItem from './AirItem.js';
 class AirList extends Component {
     render() {
         const list = this.renderDOM();
-
         this.props.Airs.forEach(air => {
             const airItem = new AirItem({ air });
             list.appendChild(airItem.render());

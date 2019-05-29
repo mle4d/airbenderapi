@@ -18,10 +18,6 @@ class Component {
         return dom;
     }
 
-    // renderTemplate() {
-    //     throw new Error(`Component "${this.constructor.name}" needs to implement renderTemplate`);
-    // }
-
     update(props) {
         props = props || {};
         

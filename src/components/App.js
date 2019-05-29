@@ -22,8 +22,8 @@ class App extends Component {
         main.appendChild(loading.render());
         
         airApi.getAirs()
-            .then(airs => {
-                airList.update({ airs });
+            .then(Airs => {
+                airList.update({ Airs });
             })
             .finally(() => {
                 loading.update({ loading: false });

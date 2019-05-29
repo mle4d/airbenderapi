@@ -5,7 +5,7 @@ QUnit.module('Air Item');
 test('renders template from data', assert => {
     const air = {
         name: '46th Earth King',
-        photoURL: 'https://vignette.wikia.nocookie.net/avatar/images/5/51/46th_Earth_King.png/revision/latest?cb=20130627160441'
+        photoUrl: 'https://vignette.wikia.nocookie.net/avatar/images/5/51/46th_Earth_King.png/revision/latest?cb=20130627160441'
     };
 
     const airItem = new AirItem({ air });
