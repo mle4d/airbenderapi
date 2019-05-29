@@ -15,7 +15,7 @@ test('renders template from data', assert => {
     assert.htmlEqual(rendered, /*html*/`
         <li class="air-item">
         <h2>46th Earth King</h2>
-        <img src="https://vignette.wikia.nocookie.net/avatar/images/5/51/46th_Earth_King.png/revision/latest?cb=2013062716044">
+        <img src="https://vignette.wikia.nocookie.net/avatar/images/5/51/46th_Earth_King.png/revision/latest?cb=20130627160441">
         </li>
         `);
 });
