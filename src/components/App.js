@@ -52,8 +52,6 @@ class App extends Component {
             <div>
                 
                 <main>
-                    <!--a href="#">Enemies</a>
-                    <a href="#">Allies</a-->
                 </main>
             </div>
         `;
