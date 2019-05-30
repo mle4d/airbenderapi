@@ -20,14 +20,28 @@ class App extends Component {
 
         const loading = new Loading({ loading: true });
         main.appendChild(loading.render());
+
+        function loadCharacters() {
+            const params = window.location.hash.slice(1);
+
+            const searchParams = new URLSearchParams(params);
+            const stringParams = searchParams.toString();
+            console.log(stringParams);
+            airApi.getAirs(stringParams)
+                .then(Airs => {
+                    airList.update({ Airs });
+                })
+                .finally(() => {
+                    loading.update({ loading: false });
+                });
+        }
+
+        loadCharacters();
         
-        airApi.getAirs()
-            .then(Airs => {
-                airList.update({ Airs });
-            })
-            .finally(() => {
-                loading.update({ loading: false });
-            });
+        window.addEventListener('hashchange', () => {
+            loadCharacters();
+        });
+
 
 
         return dom;
@@ -38,7 +52,8 @@ class App extends Component {
             <div>
                 
                 <main>
-                    
+                    <!--a href="#">Enemies</a>
+                    <a href="#">Allies</a-->
                 </main>
             </div>
         `;

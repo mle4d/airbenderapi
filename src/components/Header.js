@@ -6,7 +6,8 @@ class Header extends Component {
             <header>
                 <img src="../assets/header.jpg" alt="heading picture">
                 <h1>Air Benders?</h1>
-            </header>
+                </header>
+            
         `;
     }
 }
