@@ -26,7 +26,7 @@ class App extends Component {
 
             const searchParams = new URLSearchParams(params);
             const stringParams = searchParams.toString();
-            console.log(stringParams);
+    
             airApi.getAirs(stringParams)
                 .then(Airs => {
                     airList.update({ Airs });
