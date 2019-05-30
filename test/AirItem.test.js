@@ -10,16 +10,17 @@ test('renders template from data', assert => {
 
     const airItem = new AirItem({ air });
     const rendered = airItem.renderTemplate();
+    
 
 
     assert.htmlEqual(rendered, /*html*/`
     <li class="air-item">
     <h2>${air.name}</h2>
-    <img src="${src}">
-    <p>
-    <a href="#${enemyLink.toString()}">Enemies</a>
-    <a href="#${allyLink.toString()}">Allies</a>
-    </p>
+    <img src="../../assets/placeholder.jpg"> 
+    <p> 
+    <a href="#enemies=46th+Earth+King">Enemies</a> 
+    <a href="#allies=46th+Earth+King">Allies</a> 
+    </p> 
     </li>
     `);
 });
