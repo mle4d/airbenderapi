@@ -15,12 +15,12 @@ test('renders template from data', assert => {
 
     assert.htmlEqual(rendered, /*html*/`
     <li class="air-item">
-    <h2>${air.name}</h2>
-    <img src="../../assets/placeholder.jpg"> 
-    <p> 
-    <a href="#enemies=46th+Earth+King">Enemies</a> 
-    <a href="#allies=46th+Earth+King">Allies</a> 
-    </p> 
+        <h2>${air.name}</h2>
+        <img src="../../assets/placeholder.jpg"> 
+        <p> 
+        <a href="#enemies=46th+Earth+King">Enemies</a> 
+        <a href="#allies=46th+Earth+King">Allies</a> 
+        </p> 
     </li>
     `);
 });

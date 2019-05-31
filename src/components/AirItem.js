@@ -12,12 +12,12 @@ class AirItem extends Component {
         
         return /*html*/`
         <li class="air-item">
-        <h2>${air.name}</h2>
-        <img src="${src}">
-        <p>
-        <a href="#${enemyLink.toString()}">Enemies</a>
-        <a href="#${allyLink.toString()}">Allies</a>
-        </p>
+            <h2>${air.name}</h2>
+            <img src="${src}">
+            <p>
+            <a href="#${enemyLink.toString()}">Enemies</a>
+            <a href="#${allyLink.toString()}">Allies</a>
+            </p>
         </li>
         `;
     }
