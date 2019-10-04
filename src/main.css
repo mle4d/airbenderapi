@@ -1,0 +1,36 @@
+body {
+    background: lightseagreen;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: courier;
+}
+
+header, main {
+    padding: 8px;
+}
+
+main {
+    position: relative;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8d5e7;
+    border-bottom: 1px solid lightslategray;
+    color: lightseagreen;
+    font-size: 30px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 20px;
+    flex-grow: 2;
+}
+img {
+    width: 250px;
+    height: 200px;
+}
